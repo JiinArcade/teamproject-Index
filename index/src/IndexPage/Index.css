@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: '정선';
+    src: url('../font/AnyConv.com__JSArirangHON.woff');
+}
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+}
+
+.index-wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2.5fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    position: relative;
+}
+
+.index-daejeon {
+    position: absolute;
+    top: 3%;
+    left: 32%;
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.index-daejeon h1:first-child {
+    font-size: 60px;
+}
+
+.index-daejeon h1:last-child {
+    margin-top: -10px;
+    font-size: 30px;
+    color: #2a2a2a;
+    font-weight: 400;
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+.big-red-strong {
+    color: rgb(239, 26, 26);
+    margin-right: 15px;
+}
+
+.big-black-strong {
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.point-red {
+    font-size: 45px;
+    color: rgb(239, 26, 26);
+    font-family: '정선';
+}
+
+.last-big-black-strong {
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.triangle-red {
+    width: 0;
+    height: 0;
+    border-bottom: 400px solid red;
+    border-left: 200px solid transparent;
+    position: absolute;
+    top: -100px;
+    right: 100px;
+    transform: rotate(-90deg);
+    z-index: 2;
+}
+
+.triangle-blue {
+    width: 0;
+    height: 0;
+    border-bottom: 400px solid rgb(53, 154, 255);
+    border-left: 200px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateX(180deg);
+}
+
+
+.triangle-red-bottom {
+    width: 0;
+    height: 0;
+    border-bottom: 400px solid red;
+    border-left: 200px solid transparent;
+    position: absolute;
+    top: 453px;
+    left: 100px;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.triangle-blue-bottom {
+    width: 0;
+    height: 0;
+    border-bottom: 400px solid rgb(53, 154, 255);
+    border-left: 200px solid transparent;
+    position: absolute;
+    top: 350px;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
