@@ -89,6 +89,7 @@
     margin: 0 auto;
     text-align: center;
     font-family: 'GangwonEduPowerExtraBoldA';
+    animation: fadein 3s;
 }
 
 .index-daejeon h1:first-child {
@@ -129,6 +130,16 @@
     margin:0 auto;
     text-align: center;
     margin-top: 80px;
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .index-BoxList {
@@ -136,10 +147,17 @@
     height: 400px;
     margin-right: 40px;
     border-radius: 15px;
+    background-color: #fff;
     box-shadow: 0 7px 7px 7px rgb(228, 215, 215);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 300ms ease-out;
+}
+
+.index-BoxList:hover {
+    background-color: #f1faff;
+    margin-top: -12px;
 }
 
 .index-BoxList:last-child{
@@ -171,7 +189,8 @@
 }
 
 .index-Boxtem p {
-    color: #3b3b3b;
+    margin: 0 auto;
+    color: #5e5e5e;
     font-weight: 400;
     font-family: 'GmarketSansMedium';
 }
@@ -179,7 +198,7 @@
 .index-footer{
     text-align: center;
     margin: 0 auto;
-    padding: 50px;
+    margin-bottom: 20px;
 }
 
 .index-footer p {
@@ -200,3 +219,4 @@
 .index-footer span {
     margin-right: 5px;
 }
+
